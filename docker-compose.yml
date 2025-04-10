@@ -1,0 +1,12 @@
+services:
+  glassdoor_analytics:
+    image: glassdoor_analytics_etl
+
+    volumes:
+      - ./airflow:/opt/airflow
+      - ./airflow/dags:/opt/airflow/dags
+
+    ports:
+      - "8080:8080"
+
+    command: standalone
