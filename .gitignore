@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.db
+*.pid
+*.log
+logs/
+standalone_admin_password.txt
+.env
